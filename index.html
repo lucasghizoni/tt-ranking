@@ -1,12 +1,18 @@
 <html>
     <head>
-        <link rel="import" href="./component/gzn-grid.html">
+        <link rel="import" href="./component/gzn-table.html">
     </head>
     <body>
-        <gzn-grid></gzn-grid>
+        <section style="width: 80%; margin: auto; text-align: center;">
+            <input type="text">
+            <gzn-table></gzn-table>
+        </section>
     </body>
     <script>
-        const gznGrid = document.querySelector('gzn-grid');
-        gznGrid.createRow('1', 'Ma Long');
+        const gznGrid = document.querySelector('gzn-table');
+        gznGrid.insertRows({ranking: '1', previous: '1', name: 'Ma Long', points: 123213, country: "china"});
+        gznGrid.insertRows({ranking: '2', previous: '1', name: 'Fan Zhendong', points: 123213, country: "china"});
+        gznGrid.insertRows({ranking: '3', previous: '1', name: 'Xu xin', points: 123213, country: "china"});
+        gznGrid.insertRows({ranking: '4', previous: '1', name: 'Zhang Jike', points: 123213, country: "china"});
     </script>
 </html>

@@ -1,0 +1,22 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+}
+
+tr {
+    border-bottom: 1px solid #dbdbdb;
+    line-height: 30px;
+}
+
+tbody > tr:hover {
+    background-color: #eeeeee;
+}
+
+
+input {
+    margin: auto;
+}
