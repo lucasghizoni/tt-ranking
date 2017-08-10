@@ -22,12 +22,23 @@
 				const clone = document.importNode(gznRowTemplate.content, true),
 					  tds = clone.querySelectorAll('td');
 
+				
+
 				Object.keys(player).forEach( (key, index) => {
-					tds[index].textContent = player[key];	
+					if(key !== 'country'){
+						tds[index].textContent = player[key];
+					}else{
+						let img = tds[index].querySelector('img');
+						img.src = './flags/' + player[key] + '.svg';
+					}
 				});
 				
 				this.tbodyElm.appendChild(clone);
 			});
+		}
+
+		filter(attrib, value){
+			
 		}
 	}
 

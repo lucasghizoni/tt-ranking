@@ -1,18 +1,24 @@
 <html>
     <head>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <link rel="import" href="./component/gzn-table.html">
     </head>
+    <style>
+        section {
+            width: 80%;
+            margin: auto;
+        }
+    </style>
     <body>
-        <section style="width: 80%; margin: auto; text-align: center;">
-            <input type="text">
+        <section>
             <gzn-table></gzn-table>
         </section>
     </body>
     <script>
         const gznGrid = document.querySelector('gzn-table');
-        gznGrid.insertRows({ranking: '1', previous: '1', name: 'Ma Long', points: 123213, country: "china"});
-        gznGrid.insertRows({ranking: '2', previous: '1', name: 'Fan Zhendong', points: 123213, country: "china"});
-        gznGrid.insertRows({ranking: '3', previous: '1', name: 'Xu xin', points: 123213, country: "china"});
-        gznGrid.insertRows({ranking: '4', previous: '1', name: 'Zhang Jike', points: 123213, country: "china"});
+        gznGrid.insertRows({ranking: '1', previous: '1', name: 'Ma Long', points: 123213, country: "cn"});
+        gznGrid.insertRows({ranking: '2', previous: '1', name: 'Fan Zhendong', points: 123213, country: "cn"});
+        gznGrid.insertRows({ranking: '3', previous: '1', name: 'Xu xin', points: 123213, country: "cn"});
+        gznGrid.insertRows({ranking: '4', previous: '1', name: 'Zhang Jike', points: 123213, country: "cn"});
     </script>
 </html>

@@ -1,6 +1,13 @@
 table {
     width: 100%;
     border-collapse: collapse;
+    font-family: Roboto, sans-serif;
+    font-size: 13px;
+}
+
+thead {
+    color: rgba(0, 0, 0, 0.54);
+    border-bottom: 3px solid #e3e3e3;
 }
 
 th {
@@ -16,7 +23,9 @@ tbody > tr:hover {
     background-color: #eeeeee;
 }
 
-
-input {
-    margin: auto;
-}
+td > img {
+    display: block; 
+    max-width: 35px;
+    height: auto;
+    border-radius: 6px;
+} 
